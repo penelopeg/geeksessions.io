@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cp -r build/* ./"
+    "copyHtml": "cp -r build/*.html ./",
+    "copyCss": "cp -r build/custom/*.css ./stylesheets/custom",
+    "build": "npm run copyHtml && npm run copyCss"
   },
   "repository": {
     "type": "git",
