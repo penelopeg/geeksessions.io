@@ -33,6 +33,3 @@ node_modules
 .node_repl_history
 
 # Source and build directories
-build/
-src/
-layouts/
