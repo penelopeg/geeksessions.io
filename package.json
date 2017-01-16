@@ -19,5 +19,7 @@
     "url": "https://github.com/geeksessions/geeksessions.github.io/issues"
   },
   "homepage": "https://github.com/geeksessions/geeksessions.github.io#readme",
-  "dependencies": {}
+  "dependencies": {
+    "basscss": "^8.0.3"
+  }
 }
