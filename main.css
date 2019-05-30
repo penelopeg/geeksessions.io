@@ -1,28 +1,16 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans";
-@import "../../node_modules/basscss/css/basscss.min.css";
 
 
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
-  min-height: 100vh;
+header {
+  font-size: 2rem
 }
 
 main {
-  flex: 1 0 auto;
-  background-color: whitesmoke;
-  min-height: inherit;
+  min-height: 80%
 }
 
-video {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-}
-
-h1 {
-  font-size: 3rem;
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 1rem;
+  padding: 0;
 }
