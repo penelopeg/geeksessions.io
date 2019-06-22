@@ -8,6 +8,7 @@
       type='text/css'
     >
     <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -15,25 +16,23 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v3.3"></script>
 
-    <header>
+    <header class="center mb4">
       <img height="200" src="./gs_null_bg.svg" alt="GeekSessions Faro Logo" />
     </header>
-    <main>
-      <p>We organize regular events like talks and workshops with the goal of bringing local tech denizens together.</p>
-
-      <div class="row space-around ">
-        <div>
-          <div class="row">
-            <p>
-              Join us on Discord: &nbsp
-            </p>
+    <main class="sm-flex">
+      <div class="blurb m3 md-col-6">
+        <p class="h2">We organize frequent events like talks and workshops with the goal of bringing local tech denizens together.</p>
+        <div class="h4">
             <a href="https://chat.geeksessions.io/" target="_blank">
-              grab invite
+              Join us on Discord
             </a>
           </div>
-        </div>
+      </div>
+      
+
+      <div class="md-col-6 center">
           <div
-            class="fb-page"
+            class="card fb-page"
             data-href="https://www.facebook.com/pg/GeekSessionsFaro/"
             data-tabs="events"
             data-width="400"
@@ -52,8 +51,8 @@
           </div>
         </div>
     </main>
-    <footer class="flex">
-      <h4>Geeksessions.io is made collaboratively with ❤️ in the Algarve, Portugal.</h4>
+    <footer class="flex h6 mt2">
+      Geeksessions.io is made collaboratively with ❤️ in the Algarve, Portugal.
     </footer>
   </body>
 </html>
