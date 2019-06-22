@@ -1,28 +1,17 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans";
 
-
-header {
-  font-size: 2rem
-}
-
-main {
-  min-height: 80%;
-  width: 50em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
   font-family: 'Helvetica', sans-serif;
   margin: 1rem;
   padding: 0;
 }
 
-.row {
-  display: flex;
-  align-items: center;
+.blurb p {
+  max-width: 30rem;
 }
 
-.space-around {
-  justify-content: space-around;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px; /* 5px rounded corners */
+  padding: 2em;
 }
