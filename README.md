@@ -18,10 +18,8 @@ npm run build
 
 To run in development
 
-Install Now CLI
-
 ```sh
-npm install -g now
+npm run dev
 ```
 
 To test with your own google calendar, you need to follow these steps:
@@ -39,7 +37,7 @@ API_HOST=<the_address_where_the_api_is_running_by_default_http://localhost:3000>
 
 Next, run now in development mode
 ```sh
-now dev
+npm run dev
 ```
 
 Open a browser on `localhost:3000`
