@@ -30,9 +30,9 @@
         "react-dom": "^16.14.0"
     },
     "devDependencies": {
-        "autoprefixer": "^9.8.6",
+        "autoprefixer": "^10.3.7",
         "eslint": "^6.7.2",
         "postcss": "^8.2.10",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
+        "tailwindcss": "^2.2.16"
     }
 }
