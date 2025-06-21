@@ -85,10 +85,12 @@ const Index = (props) => (
   </Fragment>
 );
 
-Index.getInitialProps = async function (context) {
+export async function getServerSideProps(context) {
   const response = {
-    error: false,
-    events: []
+    props: {
+      error: false,
+      events: []
+    }
   }
 
   try {
@@ -96,18 +98,13 @@ Index.getInitialProps = async function (context) {
     const res = await fetch(`${HOST_NAME}/api/events`);
     const data = await res.json();
 
-    response.events = data;
+    response.props.events = data;
   } catch (error) {
     console.log(error);
-    response.error = true;
-  } finally {
-    return response;
+    response.props.error = true;
   }
-};
 
-Index.defaultProps = {
-  error: false,
-  events: []
+  return response;
 }
 
 export default Index;

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const truncateText = (text, length) => {
   if (text?.length > length) {
@@ -18,10 +19,12 @@ const EventCard = (props) => {
         {truncateText(props.event.description, 240)}
       </p>
       <div className="flex mb-2">
-        <img
+        <Image
           alt="event location"
           className="w-6 h-6 mr-2"
           src="/assets/icon_marker.svg"
+          width={24}
+          height={24}
         />
         <a
           href={`https://maps.google.com/?q=${props.event.location}`}
@@ -36,18 +39,22 @@ const EventCard = (props) => {
         className="flex flex-col md:flex-row md:space-x-6"
       >
         <div className="flex mb-2 md:mb-0">
-          <img
+          <Image
             alt="event date"
             className="w-6 h-6 mr-2"
             src="/assets/icon_calendar.svg"
+            width={24}
+            height={24}
           />
           {props.event.date}
         </div>
         <div className="flex">
-          <img
+          <Image
             alt="event time"
             className="w-6 h-6 mr-2"
             src="/assets/icon_clock.svg"
+            width={24}
+            height={24}
           />
           {props.event.startTime} - {props.event.endTime}
         </div>
